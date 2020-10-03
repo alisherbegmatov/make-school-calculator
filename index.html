@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Make School Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" async></script>
+</head>
+
+<!-- BODY -->
+<body>
+  <main>
+    <img id="make-school-logo" src="make-school-logo.png" alt="Make School Logo">
+    <form>
+
+<!-- INPUT 1 -->
+      <div id="input-container">
+        <label for="New Students" class="no-margin-top">New Students</label>
+        <div class="custom-input">
+          <input id="new_students" name="New Students" type="number" value="0" min="0">
+        </div>
+
+<!-- INPUT 2 -->
+        <label for="Drop Out Students">Drop Out Students</label>
+        <div class="custom-input">
+          <input id="dropout_students" name="Drop Out Students" type="number" value="0" min="0">
+        </div>
+
+<!-- DROPDOWN SELECTOR -->
+        <div class="custom-select" style="width:200px; text-align: center; padding: 10px;">
+          <select id='years'>
+            <option value="0">YEARS</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+
+<!-- OUTPUT -->
+        <div id="output-container">
+          <span style= "padding-left: 25px";>TOTAL</span>
+          <span id="display_total" style= "padding-left: 20px";> 0</span>
+
+        </form>
+      </main>
+    </body>
+    </html>
